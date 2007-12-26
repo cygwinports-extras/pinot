@@ -1,0 +1,13 @@
+DESCRIPTION="Web, file, and metadata desktop search"
+HOMEPAGE="http://pinot.berlios.de/"
+SRC_URI="mirror://berlios/${PN}/${P}.tar.gz"
+
+src_compile() {
+	cd ${S}
+	mkdir -p m4
+	cygautoreconf
+	lndirs
+	cd ${B}
+	cygconf --disable-static --with-http=curl --with-ssl=/usr
+	cygmake
+}

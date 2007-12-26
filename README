@@ -1,0 +1,156 @@
+pinot
+------------------------------------------
+Pinot is a D-Bus service that crawls, indexes your documents and 
+monitors them for changes, and a GTK-based user interface that enables 
+to query the index built by the service and your favourite Web engines, 
+and display and analyze the results.
+
+Runtime requirements:
+  cygwin-1.5.24-2
+  antiword
+  catdoc
+  crypt-1.1-1
+  glib2-2.14.4-1
+  glibmm24-2.14.2-1
+  gmime2-2.2.9-1
+  gtk2-x11-2.12.2-1
+  gtkmm24-2.10.11-1
+  libcurl4-7.16.3-1
+  libdbus-glib_1_2-0.74-1
+  libdbus1_3-1.0.2-1
+  libintl8-0.15-1
+  libsigc++20-2.1.1-1
+  libsqlite3_0-3.5.2-1
+  libtextcat0-2.2-2
+  libxapian15-1.0.4-1
+  libxml++26-2.18.2-1
+  libxml2-2.6.30-1
+  openssl-0.9.8e-3
+  shared-mime-info
+  taglib-1.4-2
+  unrtf
+  unzip
+  xpdf
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.3.7-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libboost-devel-1.34.1-1
+  libtool1.5-1.5.23a-2
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://pinot.berlios.de/
+
+Canonical download:
+  http://prdownloads.berlios.de/pinot/
+
+-------------------------------------------
+
+Build instructions:
+  unpack pinot-0.81-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./pinot-0.81-X.cygport all
+
+This will create:
+  /usr/src/pinot-0.81-X-src.tar.bz2
+  /usr/src/pinot-0.81-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/pinot/external-filters.xml
+  /etc/pinot/globalconfig.xml
+  /etc/pinot/textcat3_conf.txt
+  /etc/pinot/textcat_conf.txt
+  /etc/postinstall/pinot.sh
+  /etc/xdg/autostart/pinot-dbus-daemon.desktop
+  /usr/bin/pinot-dbus-daemon.exe
+  /usr/bin/pinot-index.exe
+  /usr/bin/pinot-label.exe
+  /usr/bin/pinot-search.exe
+  /usr/bin/pinot.exe
+  /usr/lib/deskbar-applet/handlers/pinot-live.py
+  /usr/lib/deskbar-applet/modules-2.20-compatible/pinot-module.py
+  /usr/lib/pinot/filters/cygexternalfilter.dll
+  /usr/lib/pinot/filters/cygmboxfilter.dll
+  /usr/lib/pinot/filters/cygtaglibfilter.dll
+  /usr/lib/pinot/filters/libexternalfilter.la
+  /usr/lib/pinot/filters/libmboxfilter.la
+  /usr/lib/pinot/filters/libtaglibfilter.la
+  /usr/share/applications/pinot.desktop
+  /usr/share/dbus-1/services/de.berlios.Pinot.service
+  /usr/share/doc/pinot-0.81/ABOUT-NLS
+  /usr/share/doc/pinot-0.81/AUTHORS
+  /usr/share/doc/pinot-0.81/COPYING
+  /usr/share/doc/pinot-0.81/ChangeLog
+  /usr/share/doc/pinot-0.81/FAQ
+  /usr/share/doc/pinot-0.81/INSTALL
+  /usr/share/doc/pinot-0.81/NEWS
+  /usr/share/doc/pinot-0.81/README
+  /usr/share/doc/pinot-0.81/TODO
+  /usr/share/icons/hicolor/16x16/apps/pinot.png
+  /usr/share/icons/hicolor/22x22/apps/pinot.png
+  /usr/share/icons/hicolor/24x24/apps/pinot.png
+  /usr/share/icons/hicolor/32x32/apps/pinot.png
+  /usr/share/icons/hicolor/48x48/apps/pinot.png
+  /usr/share/locale/de/LC_MESSAGES/pinot.mo
+  /usr/share/locale/es/LC_MESSAGES/pinot.mo
+  /usr/share/locale/fr/LC_MESSAGES/pinot.mo
+  /usr/share/locale/it/LC_MESSAGES/pinot.mo
+  /usr/share/locale/nl/LC_MESSAGES/pinot.mo
+  /usr/share/locale/pt/LC_MESSAGES/pinot.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/pinot.mo
+  /usr/share/locale/ru/LC_MESSAGES/pinot.mo
+  /usr/share/locale/sv/LC_MESSAGES/pinot.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/pinot.mo
+  /usr/share/man/man1/pinot-dbus-daemon.1.gz
+  /usr/share/man/man1/pinot-index.1.gz
+  /usr/share/man/man1/pinot-label.1.gz
+  /usr/share/man/man1/pinot-search.1.gz
+  /usr/share/man/man1/pinot.1.gz
+  /usr/share/pinot/AmazonAPI.src
+  /usr/share/pinot/engines/A9.src
+  /usr/share/pinot/engines/Accoona.src
+  /usr/share/pinot/engines/BitTorrent.src
+  /usr/share/pinot/engines/Clusty.src
+  /usr/share/pinot/engines/CreativeCommons.src
+  /usr/share/pinot/engines/Exalead.src
+  /usr/share/pinot/engines/Freshmeat.src
+  /usr/share/pinot/engines/Google.src
+  /usr/share/pinot/engines/GoogleCodeSearch.src
+  /usr/share/pinot/engines/KodersDescription.xml
+  /usr/share/pinot/engines/MSN.src
+  /usr/share/pinot/engines/MozDexDescription.xml
+  /usr/share/pinot/engines/OmegaDescription.xml
+  /usr/share/pinot/engines/RollYOTopNews.src
+  /usr/share/pinot/engines/Topix.src
+  /usr/share/pinot/engines/Wikipedia.src
+  /usr/share/pinot/engines/WiseNut.src
+  /usr/share/pinot/engines/Yahoo.src
+  /usr/share/pinot/metase-gtk2.glade
+  /usr/share/pinot/metase-gtk2.gladep
+  /usr/share/pinot/pinot-dbus-daemon.xml
+  /usr/share/pinot/xapian-powered.png
+
+------------------
+
+Port Notes:
+
+----- version 0.81-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

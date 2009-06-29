@@ -1,5 +1,5 @@
 category: Gnome Web
-requires: cygwin antiword catdoc crypt glib2 glibmm24 gmime2 gtk2-x11 gtkmm24 libcurl4 libdbus-glib_1_2 libdbus1_3 libintl8 libsigc++20 libsqlite3_0 libtextcat0 libxapian15 libxml++26 libxml2 openssl shared-mime-info taglib unrtf unzip xpdf
+requires: antiword catdoc crypt glib2 glibmm24 gmime2 gtk2-x11 gtkmm24 libcurl4 libdbus-glib_1_2 libdbus1_3 libintl8 libsigc++20 libsqlite3_0 libtextcat0 libxapian15 libxml++26 libxml2 openssl shared-mime-info taglib unrtf unzip xpdf
 sdesc: "GNOME desktop and web search engine"
 ldesc: "Pinot is a D-Bus service that crawls, indexes your documents and
 monitors them for changes, and a GTK-based user interface that enables
